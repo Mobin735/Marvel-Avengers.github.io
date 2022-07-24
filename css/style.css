@@ -6,11 +6,11 @@
   padding: 0;
   scroll-behavior: smooth;
 }
-body{
-  overflow-x: hidden;
 
-  overflow-y: auto;
-  }
+
+
+
+
 
 .navbar {
   display: flex;
