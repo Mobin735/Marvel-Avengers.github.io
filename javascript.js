@@ -10,24 +10,14 @@ const parallex = document.getElementById("biop");
 //     // console.log(offset);
 // })
 
-function adjustBackgrounds() {
-    windowHeight = window.document.documentElement.clientHeight;
-    $('#section-01-home').css('min-height', windowHeight);
-}     
-// Triggers Sizing on Load (783 = 800px accounting for 17px of scrollbar)
-if ($(window).width() <= 700) {
-    adjustBackgrounds();
-} else {
+var bg = $(".main-bg");
 
+function resizeBackground(){
+    bg.height($(window).height() + 60);
 }
-// Triggers Sizing on Browser Resize (783 = 800px accounting for 17px of scrollbar)
-$(window).resize(function() {
-  if ($(window).width() <= 700) {
-    adjustBackgrounds();
-  } else {
 
-  }
-}); 
+$(window).resize(resizeBackground);
+resizeBackground();
 
 
 const g = document.querySelectorAll(".item");
