@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            scroll-behavior: smooth;
+        }
+
+        .nav {
+            display: flex;
+            background-color: gray;
+            position: sticky;
+            top: 0;
+            height: 92px;
+            z-index: 3;
+        }
+
+        .nav h1{
+            height: max-content;
+            font-size: 15px;
+        }
+
+        .sec {
+            user-select: none;
+            display: flex;
+            scroll-behavior: smooth;
+            position: relative;
+            z-index: -1;
+            /* border: 2px solid red; */
+            width: 100%;
+            height: 100vh;
+        }
+
+        .sec img {
+            user-select: none;
+            scroll-behavior: smooth;
+            z-index: -1;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .sec .txt {
+            color: aliceblue;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .tpp {
+            display: flex;
+            top: 0;
+            z-index: -1;
+            background-color: black;
+            padding-top: 50px;
+        }
+
+        .tpp .dec {
+            display: flex;
+            font-size: 50px;
+            margin: auto;
+            color: aliceblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="nav">
+        <h1>helooooooooooooooooooooooo motooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
+            hisisogkkkkkkkkkkkkkkdssssssssssssssssssokd pqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqppp
+        </h1>
+    </div>
+    <div class="sec">
+        <img src="img/finallll.jpg" id="hq" alt="">
+        <h1 class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas blanditiis accusamus quae quasi,
+            optio dolor ratione nobis ipsum magni recusandae quisquam molestias iste et facilis perferendis harum alias,
+            architecto impedit!</h1>
+    </div>
+
+    <div class="tpp">
+        <h1 class="dec">Iron Man is a superhero appearing in American comic books published by Marvel Comics. The
+            character was co-created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by
+            artists Don Heck and Jack Kirby. The character made his first appearance in Tales of Suspense #39 (cover
+            dated March 1963), and received his own title in Iron Man #1 (May 1968). Also in 1963, the character founded
+            the Avengers alongside Thor, Ant-Man, Wasp and the Hulk.
+            A wealthy American business magnate, playboy, philanthropist, inventor and ingenious scientist, Anthony
+            Edward Stark suffers a severe chest injury during a kidnapping. When his captors attempt to force him to
+            build a weapon of mass destruction, he instead creates a mechanized suit of armor to save his life and
+            escape captivity. Later, Stark develops his suit, adding weapons and other technological devices he designed
+            through his company, Stark Industries. He uses the suit and successive versions to protect the world as Iron
+            Man. Although at first concealing his true identity, Stark eventually publicly reveals himself to be Iron
+            Man.
+            Initially, Iron Man was a vehicle for Stan Lee to explore Cold War themes, particularly the role of American
+            technology and industry in the fight against communism. Subsequent re-imaginings of Iron Man have
+            transitioned from Cold War motifs to contemporary matters of the time.[1]
+            Throughout most of the character's publication history, Iron Man has been a founding member of the superhero
+            team the Avengers and has been featured in several incarnations of his own various comic book series. Iron
+            Man has been adapted for several animated television shows and films. In the Marvel Cinematic Universe, Tony
+            Stark was portrayed by Robert Downey Jr. in the films Iron Man (2008), The Incredible Hulk (2008), Iron Man
+            2 (2010), The Avengers (2012), Iron Man 3 (2013), Avengers: Age of Ultron (2015), Captain America: Civil War
+            (2016), Spider-Man: Homecoming (2017), Avengers: Infinity War (2018), and Avengers: Endgame (2019), while
+            Mick Wingert voiced the character in the animated series What If...? (2021).
+            A wealthy American business magnate, playboy, philanthropist, inventor and ingenious scientist, Anthony
+            Edward Stark suffers a severe chest injury during a kidnapping. When his captors attempt to force him to
+            build a weapon of mass destruction, he instead creates a mechanized suit of armor to save his life and
+            escape captivity. Later, Stark develops his suit, adding weapons and other technological devices he designed
+            through his company, Stark Industries. He uses the suit and successive versions to protect the world as Iron
+            Man. Although at first concealing his true identity, Stark eventually publicly reveals himself to be Iron
+            Man.
+            Initially, Iron Man was a vehicle for Stan
+            A wealthy American business magnate, playboy, philanthropist, inventor and ingenious scientist, Anthony
+            Edward Stark suffers a severe chest injury during a kidnapping. When his captors attempt to force him to
+            build a weapon of mass destruction, he instead creates a mechanized suit of armor to save his life and
+            escape captivity. Later, Stark develops his suit, adding weapons and other technological devices he designed
+            through his company, Stark Industries. He uses the suit and successive versions to protect the world as Iron
+            Man. Although at first concealing his true identity, Stark eventually publicly reveals himself to be Iron
+            Man.
+            Initially, Iron Man was a vehicle for Stan
+        </h1>
+    </div>
+
+
+
+
+    <script>
+        let bin = document.getElementById("hq");
+
+        window.addEventListener("scroll", function () {
+            let value = window.scrollY;
+            bin.style.top = value * 0.7 + 'px';
+        })
+    </script>
+
+</body>
+
+</html>
