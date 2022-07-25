@@ -1,7 +1,7 @@
-@media only screen and (max-width: 1140px){
+@media screen and (max-width: 1140px){
    
-    #dtail .p1{
-        font-size: 70px   !important;
+    #dtail p.p1{
+        font-size: 70px;
     }
 
 }
