@@ -34,10 +34,11 @@
             z-index: -1;
             /* border: 2px solid red; */
             width: 100%;
-            height: 50vh;
+            height: 100vh;
         }
 
         .sec img {
+            position: fixed;
             user-select: none;
             scroll-behavior: smooth;
             z-index: -1;
@@ -133,12 +134,12 @@
 
 
     <script>
-        // let bin = document.getElementById("hq");
+        let bin = document.getElementById("hq");
 
-        // window.addEventListener("scroll", function () {
-        //     let value = window.scrollY;
-        //     bin.style.top = value * 0.7 + 'px';
-        // })
+        window.addEventListener("scroll", function () {
+            let value = window.scrollY;
+            bin.style.top = value * 0.03 + 'px';
+        })
     </script>
 
 </body>
