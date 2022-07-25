@@ -139,11 +139,11 @@
 
         window.addEventListener("scroll", function () {
             let value = window.scrollY;
-            bin.style.top = value * 0.03 + 'px';
+            bin.style.top = value * 0.042 + 'px';
         })
         
         let vh= (window.innerHeight + 150) * 0.01;
-        document.documentElement.style.setProperty('--vh', `${vh}px`);
+        document.documentElement.style.setProperty('--vh', vh + 'px');
         
 //         window.addEventListener('resize', () => {
 //             let vh= window.innerHeight * 0.01;
