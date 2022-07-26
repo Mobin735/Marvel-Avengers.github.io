@@ -135,6 +135,8 @@
 }
 
 .bg-box {
+  -webkit-backface-visibility: hidden;
+-webkit-transform: translateX(0);
   z-index: 2;
   display: flex;
   justify-content: center;
