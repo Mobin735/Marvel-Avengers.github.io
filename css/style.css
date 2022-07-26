@@ -8,6 +8,7 @@
 }
 
 .navbar {
+  -webkit-tap-highlight-color: transparent;
   display: flex;
   height: 100%;
   justify-content: center;
@@ -114,6 +115,7 @@
 
 
 .test{
+  -webkit-tap-highlight-color: transparent;
   height: 100vh;
 }
 
@@ -129,6 +131,7 @@
 }
 
 .bg-box {
+  -webkit-tap-highlight-color: transparent;
   z-index: 2;
   display: flex;
   justify-content: center;
