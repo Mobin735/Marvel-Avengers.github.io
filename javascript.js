@@ -3,7 +3,7 @@ let parallax = document.getElementById("main-bg");
 window.addEventListener("scroll", function () {
     let value = window.scrollY;
 
-    if (value>0) {
+    if (value>5) {
         document.querySelector(".nav-blur,.nav-bg").classList.remove("top");
     }
     else{
