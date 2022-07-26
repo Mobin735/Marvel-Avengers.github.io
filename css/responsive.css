@@ -1,7 +1,15 @@
-@media only screen and (max-width: 1136px){
+@media only screen and (max-width: 1140px){
    
-    .video-main .row .details .p1{
-        font-size: 70px;
+    #dtail p.p1{
+        font-size: 65px;
+    }
+
+    .nav-blur{
+        height: 92px;
+    }
+
+    .nav-blur.top{
+        height: 110px;
     }
 
 }

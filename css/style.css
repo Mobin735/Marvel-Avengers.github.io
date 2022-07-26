@@ -33,11 +33,13 @@
 
 .nav-logo img {
   width: 30%;
+  height: 60px;
   border: 0.15rem solid #D98324;
   border-radius: 50%;
 }
 
 .liii {
+  height: 100%;
   display: flex;
   justify-content: center;
   margin-left: -40px;

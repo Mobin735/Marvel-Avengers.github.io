@@ -2,6 +2,14 @@ let parallax = document.getElementById("main-bg");
 
 window.addEventListener("scroll", function () {
     let value = window.scrollY;
+
+    if (value>0) {
+        document.querySelector(".nav-blur,.nav-bg").classList.remove("top");
+    }
+    else{
+        document.querySelector(".nav-blur,.nav-bg").classList.add("top");
+    }
+
     parallax.style.top = value * 0.042 + 'px';
 })
 
@@ -35,3 +43,6 @@ g.forEach((v) => {
         vqideo(v.children[0].dataset.id, v);
     });
 });
+
+
+

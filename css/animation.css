@@ -36,7 +36,7 @@
 
 .nav-blur {
     -webkit-tap-highlight-color: transparent;
-    height: 92px;
+    height: 75px;
     user-select: none;
     position: sticky;
     top: 0;
@@ -46,6 +46,17 @@
     background-repeat: no-repeat;
     background-position: 100% 30%;
     z-index: 3;
+    transition: 0.6s ease-in-out;
+}
+
+.nav-blur.top{
+    height: 100px;
+    background: none;
+}
+
+.nav-bg.top{
+    backdrop-filter: none;
+    background-color: transparent;
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
@@ -53,6 +64,7 @@
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(3.1px);
         background-color: rgb(49 46 46 / 13%);
+        transition: 0.6s ease-in-out;
     }
 
     .warning {
