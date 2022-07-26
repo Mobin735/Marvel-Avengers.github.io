@@ -115,6 +115,10 @@
 
 
 .test{
+  -webkit-backface-visibility: hidden;
+
+
+-webkit-transform: translateX(0);
   -webkit-tap-highlight-color: transparent;
   height: 100vh;
 }
