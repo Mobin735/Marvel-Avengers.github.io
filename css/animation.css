@@ -57,7 +57,7 @@
     transition: all 0.7s ease;
 }
 
-/* .nav-blur.top {
+.nav-blur.top {
     transition-delay: all 0.7s ease;
     transition: all 0.3s ease;
     padding: 5px 0;
@@ -69,7 +69,7 @@
     backdrop-filter: none;
     background-color: transparent;
      
-} */
+}
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     .nav-bg {
