@@ -42,6 +42,9 @@
 
 .video-main .row .details .p1 {
     text-transform: uppercase;
+    margin-right: -80%;
+    opacity: 0;
+    transition: all 1s ease;
     font-size: 80px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     background: -webkit-linear-gradient(240deg, #000000, #e8c6c6);
@@ -50,6 +53,9 @@
 }
 
 .video-main .row .details .p2 {
+    margin-right: -80%;
+    opacity: 0;
+    transition: all 2s ease;
     text-decoration-line: underline;
     text-decoration-style: dashed;
     text-decoration-thickness: 2px;
@@ -57,6 +63,13 @@
     font-size: 22px;
     color: rgba(255, 255, 255, 0.427);
 }
+
+.video-main-row-detail-p{
+    opacity: 1  !important; 
+    margin-right: 0 !important;
+}
+
+
 
 .gallery {
     padding-top: 85px;

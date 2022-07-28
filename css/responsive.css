@@ -1,27 +1,96 @@
-@media only screen and (max-width: 1140px){
-   
-    #dtail p.p1{
+@media only screen and (max-width: 1140px) {
+
+    #dtail p.p1 {
         font-size: 65px;
     }
 
-    .nav-blur{
+    .nav-blur {
         height: 110px;
     }
 
-    .nav-blur.top{
+    .nav-blur.top {
         height: 92px;
     }
 
 }
 
-@media only screen and (max-width: 825px){
+@media only screen and (max-width: 825px) {
 
-        .test{
-            height: calc(var(--vh,1vh)*100);
-        }
-        
-        #main-bg{
-            height: calc(var(--vh,1vh)*100);
-        }
+    .test {
+        height: calc(var(--vh, 1vh)*100);
+    }
+
+    #main-bg {
+        height: calc(var(--vh, 1vh)*100);
+    }
 }
-    
+
+@media only screen and (max-width: 985px) {
+    .bg-box{
+        flex-direction: column-reverse;
+        row-gap: 135px;
+    }
+
+    .first-half{
+        row-gap: 20px;
+       width: 136%; 
+    }
+
+    .big-test{
+        font-size: 67px;
+    }
+
+    .small-text{
+        font-size: 21px;
+    }
+
+    .fhh-btn{
+        height: 100%;
+        font-size: 20px;
+    }
+
+    .second-half img {
+        width: 168%;
+    }
+
+    .second-half{
+        margin-bottom: 0;
+        margin-right: -100vw;
+    }
+
+    .test-img-show{
+        margin-right: 0;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .ironman-main {
+        padding-top: 85px;
+        height: fit-content;
+        flex-direction: column-reverse;
+        row-gap: 52px;
+        /* 1545 */
+    }
+
+    .first-data {
+        row-gap: 30px;
+    }
+
+    .dsmall-text {
+        font-size: 18px;
+        text-align: center;
+        margin-top: 0;
+    }
+
+    .ssection-img {
+        margin-top: 0;
+        width: 54%;
+    }
+
+    .ssection-img:hover img {
+        width: 400px;
+        box-shadow: 0px 0px 170px 1px #f13400fe;
+    }
+}
