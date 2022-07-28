@@ -45,32 +45,35 @@
 .nav-blur {
     -webkit-tap-highlight-color: transparent;
     height: 75px;
+    width: 100%;
     user-select: none;
-    position: sticky;
-    top: 0;
-    background: rgba(0, 0, 0, 0.69) url("../img/navbar.jpg");
+    position: fixed;
+    /* top: 0; */
+    padding: 6px 0;
+    /* background: rgba(0, 0, 0, 0.69) url("../img/navbar.jpg"); */
     background-size: cover;
     background-blend-mode: darken;
     background-repeat: no-repeat;
     background-position: 100% 30%;
     z-index: 3;
-    transition: all 0.3s ease;
-}
-
-.nav-blur.top {
-    transition: all 0.3s ease;
-    /* padding: 5px 0; */
+    transition: all 0.3s ease-out;
     background: none;
 }
 
-.nav-bg.top{
-    transition: all 0.3s ease;
-    backdrop-filter: none;
-    background-color: transparent;
-     
+.nav-blur.top {
+    /* transition: all 0.3s ease; */
+    padding: 0px 0;
+    background: rgb(50, 44, 44);
 }
 
-@supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
+/* .nav-bg.top{
+    /* transition: all 0.3s ease; */
+    /* backdrop-filter: none;
+    background-color: transparent; */
+     
+/* }  */
+
+/* @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
     .nav-bg {
         -webkit-backdrop-filter: blur(10px);
         backdrop-filter: blur(3.1px);
@@ -81,7 +84,7 @@
     .warning {
         display: none;
     }
-}
+} */
 
 /* -------------------------section ironman--------------------------- */
 
