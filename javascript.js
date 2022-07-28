@@ -5,6 +5,7 @@ window.addEventListener("scroll", function () {
     // if (window.scrollY > 0) {
     //     document.querySelector(".nav-blur").classList.remove("top");
     //     let a = document.querySelector(".nav-bg");
+    
     //     a.style.backdropFilter = "blur(3.1px)";
     //     a.style.backgroundColor = " rgb(49 46 46 / 13%)";
     // }
