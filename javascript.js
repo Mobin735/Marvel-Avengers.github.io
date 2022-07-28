@@ -18,7 +18,7 @@ window.addEventListener("scroll", function () {
     parallax.style.top = value * 0.042 + 'px';
 })
 
-let vh = (window.innerHeight + 150) * 0.01;
+let vh = (window.innerHeight + 120) * 0.01;
 document.documentElement.style.setProperty('--vh', vh + 'px');
 
 
