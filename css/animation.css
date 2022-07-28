@@ -56,7 +56,8 @@
 }
 
 .nav-blur.top {
-    background: rgba(0, 0, 0, 0.69) url("../img/navbar-final.jpg");
+/*     background: rgba(0, 0, 0, 0.69) url("../img/navbar-final.jpg"); */
+    background-color: #393535;
     background-size: cover;
     background-blend-mode: darken;
     background-repeat: no-repeat;
