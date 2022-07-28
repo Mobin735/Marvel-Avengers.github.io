@@ -15,7 +15,7 @@ window.addEventListener("scroll", function () {
         a.style.backgroundColor = "transparent";
     }
 
-    // parallax.style.top = value * 0.042 + 'px';
+    parallax.style.top = value * 0.042 + 'px';
 })
 
 let vh = (window.innerHeight + 150) * 0.01;
