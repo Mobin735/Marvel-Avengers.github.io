@@ -43,6 +43,7 @@
 }
 
 .nav-blur {
+    -webkit-transform-style: preserve-3d;
     -webkit-tap-highlight-color: transparent;
     height: 75px;
     width: 100%;
@@ -52,10 +53,11 @@
     padding: 8px 0;
     background: none;
     z-index: 3;
-    transition: all 0s ease;
+    transition: all 0.3s ease;
 }
 
 .nav-blur.top {
+    -webkit-transform-style: preserve-3d;
     background: rgba(0, 0, 0, 0.69) url("../img/navbar-final.jpg");
 /*     background-color: #393535; */
     background-size: cover;
@@ -64,7 +66,7 @@
     background-position: 100% 30%;
     padding: 0px 0;
     
-    transition: all 0s ease;
+    transition: all 0.3s ease;
 }
 
 /* @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
