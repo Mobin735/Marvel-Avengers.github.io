@@ -50,7 +50,7 @@ function testcontent() {
 
 
 
-let vh = (window.innerHeight + 150) * 0.01;
+let vh = (window.innerHeight) * 0.01;
 document.documentElement.style.setProperty('--vh', vh + 'px');
 
 
