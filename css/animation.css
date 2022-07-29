@@ -43,6 +43,7 @@
 }
 
 .nav-blur {
+    -webkit-backface-visibility: hidden;
     -webkit-transform-style: preserve-3d;
     -webkit-tap-highlight-color: transparent;
     height: 75px;
