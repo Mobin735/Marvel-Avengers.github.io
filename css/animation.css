@@ -52,7 +52,7 @@
     padding: 8px 0;
     background: none;
     z-index: 3;
-    transition: all 0.55s ease;
+    transition: all 0s ease;
 }
 
 .nav-blur.top {
@@ -64,7 +64,7 @@
     background-position: 100% 30%;
     padding: 0px 0;
     
-    transition: all 0.4s ease;
+    transition: all 0s ease;
 }
 
 /* @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
