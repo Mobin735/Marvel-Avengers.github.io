@@ -6,25 +6,70 @@
         * {
             padding: 0;
             margin: 0;
+            box-sizing: border-box;
         }
 
         body {
             scroll-behavior: smooth;
         }
 
-        .nav {
-            display: flex;
-            background-color: gray;
-            position: sticky;
-            top: 0;
-            height: 92px;
-            z-index: 3;
+        .navbar {
+            position: fixed;
+            width: 100%;
+            background: url("img/navbar-final.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 100% 30%;
+            transition: all 0.3s ease;
         }
 
-        .nav h1{
-            height: max-content;
-            font-size: 15px;
+        .show{
+            background: none;
+            padding: 19px 0;
+            transition: all 0.3s ease;
         }
+
+        .navbar .logo {
+            width: 15%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .navbar .logo img {
+            width: 27%;
+            border: 0.15rem solid #D98324;
+            border-radius: 50%;
+        }
+
+        .navbar .max-width {
+            padding: 10px 0;
+            display: flex;
+            align-items: center;
+            column-gap: 21px;
+        }
+
+        .navbar .menu {
+            display: flex;
+            column-gap: 52px;
+        }
+
+        .navbar .menu li {
+            list-style: none;
+            display: inline-block;
+        }
+
+        .navbar .menu li a {
+            text-decoration: none;
+            letter-spacing: 3px;
+            background: -webkit-linear-gradient(45deg, #ffffffc4, rgb(215, 87, 87));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            font-size: large;
+            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+
 
         .sec {
             user-select: none;
@@ -34,7 +79,7 @@
             z-index: -1;
             /* border: 2px solid red; */
             width: 100%;
-            height: calc(var(--vh,1vh)*100);
+            height: calc(var(--vh, 1vh)*100);
 
         }
 
@@ -46,7 +91,7 @@
             top: 0;
             left: 0;
             width: 100%;
-            height: calc(var(--vh,1vh)*100);
+            height: calc(var(--vh, 1vh)*100);
             object-fit: cover;
             transition: transform 2s;
         }
@@ -77,11 +122,17 @@
 </head>
 
 <body>
-    <div class="nav">
-        <h1>helooooooooooooooooooooooo motooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooooo
-            hisisogkkkkkkkkkkkkkkdssssssssssssssssssokd pqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqqppp
-        </h1>
-    </div>
+    <nav class="navbar show">
+        <div class="max-width">
+            <div class="logo"><img src="img/nlogo.jpg" alt="nav-logo"></div>
+            <ul class="menu">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
     <div class="sec">
         <img src="img/finallll.jpg" id="hq" alt="">
         <h1 class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas blanditiis accusamus quae quasi,
@@ -139,11 +190,18 @@
 
         window.addEventListener("scroll", function () {
             let value = window.scrollY;
-            bin.style.top = value * 0.042 + 'px';
+
+            if (value>20) {
+                document.querySelector(".navbar").classList.remove("show");
+            }
+            else {
+                document.querySelector(".navbar").classList.add("show");
+            }
+
         })
 
-        let vh= (window.innerHeight + 150) * 0.01;
-        document.documentElement.style.setProperty('--vh', vh +'px');
+        let vh = (window.innerHeight) * 0.01;
+        document.documentElement.style.setProperty('--vh', vh + 'px');
     </script>
 
 </body>
