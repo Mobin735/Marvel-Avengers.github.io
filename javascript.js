@@ -6,7 +6,7 @@ window.addEventListener("scroll", function () {
     
     let value = window.scrollY;
     if (window.scrollY > 20) {
-        document.querySelector(".nav-blur,.nav-bg").classList.add("top");
+        document.querySelector(".nav-blur").classList.add("top");
     }
     else {
         document.querySelector(".nav-blur").classList.remove("top");
@@ -50,7 +50,7 @@ function testcontent() {
 
 
 
-let vh = (window.innerHeight) * 0.01;
+let vh = (window.innerHeight + 150) * 0.01;
 document.documentElement.style.setProperty('--vh', vh + 'px');
 
 

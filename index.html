@@ -1,210 +1,161 @@
-<!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-            box-sizing: border-box;
-        }
 
-        body {
-            scroll-behavior: smooth;
-        }
-
-        .navbar {
-            position: fixed;
-            width: 100%;
-            background: url("img/navbar-final.jpg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            background-position: 100% 30%;
-/*             background-blend-mode: darken; */
-            transition: all 0.3s ease;
-        }
-
-        .show{
-            background: none;
-            padding: 19px 0;
-            transition: all 0.3s ease;
-        }
-
-        .navbar .logo {
-            width: 15%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-
-        .navbar .logo img {
-            width: 27%;
-            border: 0.15rem solid #D98324;
-            border-radius: 50%;
-        }
-
-        .navbar .max-width {
-            padding: 10px 0;
-            display: flex;
-            align-items: center;
-            column-gap: 21px;
-        }
-
-        .navbar .menu {
-            display: flex;
-            column-gap: 52px;
-        }
-
-        .navbar .menu li {
-            list-style: none;
-            display: inline-block;
-        }
-
-        .navbar .menu li a {
-            text-decoration: none;
-            letter-spacing: 3px;
-            background: -webkit-linear-gradient(45deg, #ffffffc4, rgb(215, 87, 87));
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            font-size: large;
-            font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        }
+  <title>Avengers</title>
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="icon" href="img/tlogo-modified.png" type="image/x-icon">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/animation.css">
+  <link rel="stylesheet" href="css/youtube_gallery.css">
+  <link rel="stylesheet" href="css/responsive.css">
+  <link rel="shortcut icon" href="#">
 
 
-
-        .sec {
-            user-select: none;
-            display: flex;
-            scroll-behavior: smooth;
-            position: relative;
-            z-index: -1;
-            /* border: 2px solid red; */
-            width: 100%;
-            height: calc(var(--vh, 1vh)*100);
-
-        }
-
-        .sec img {
-            position: fixed;
-            user-select: none;
-            scroll-behavior: smooth;
-            z-index: -1;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: calc(var(--vh, 1vh)*100);
-            object-fit: cover;
-            transition: transform 2s;
-        }
-
-        .sec .txt {
-            color: aliceblue;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-        }
-
-        .tpp {
-            display: flex;
-            /* top: 0; */
-            z-index: -1;
-            background-color: black;
-            padding-top: 50px;
-        }
-
-        .tpp .dec {
-            display: flex;
-            font-size: 50px;
-            margin: auto;
-            color: aliceblue;
-        }
-    </style>
 </head>
 
 <body>
-    <nav class="navbar show">
-        <div class="max-width">
-            <div class="logo"><img src="img/nlogo.jpg" alt="nav-logo"></div>
-            <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
+  <nav class="navbar nav-blur">
+    <ul class="nav-ul">
+      <div class="nav-logo"><img src="img/nlogo.jpg" alt="nav-logo"></div>
+      <div class="liii">
+        <li id="active"><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </div>
+    </ul>
+
+    <div class="right-navbar">
+      <input type="text" placeholder="Search..." name="search" id="search">
+      <button type="submit" class="right-nav-btn btnsml"><i class="fa fa-search"></i></button>
+    </div>
+  </nav>
+
+  <section class="test">
+    <img src="img/avenger-min.jpg" id="main-bg" alt="Avengers">
+    <div class="bg-box">
+
+      <div class="first-half">
+        <p class="big-text"><span class="avengers-text">Avengers</span> Ultimate Strength of Mankind is Here</p>
+        <p class="small-text">The Avengers were a team of superheroes assembled by Nick Fury and the intelligence agency
+          S.H.I.E.L.D. through the Avengers Initiative, originally Nick intended it to be called the Protectors
+          Initiative.</p>
+        <div class="fh-btn">
+          <button class="fhh-btn" formtarget="_blank"
+            onclick="window.location.href='https://www.youtube.com/watch?v=eOrNdBpGMv8';">Watch Trailer</button>
         </div>
-    </nav>
-    <div class="sec">
-        <img src="img/finallll.jpg" id="hq" alt="">
-        <h1 class="txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas blanditiis accusamus quae quasi,
-            optio dolor ratione nobis ipsum magni recusandae quisquam molestias iste et facilis perferendis harum alias,
-            architecto impedit!</h1>
+      </div>
+
+      <div class="second-half">
+        <img src="img/main-bg.jpg" alt="Avengers">
+        <!-- 304x191.5 -->
+      </div>
+    </div>
+  </section>
+
+  <div class="data-section">
+    <div class="data-title">
+      <p class="data-title-text">Avengers</p>
+    </div>
+    <HR class="hr-title" />
+    <div class="ironman">
+      <section class="ironman-main">
+        <div class="first-data">
+          <a class="ibig-text">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            ironman
+          </a>
+          <p class="dsmall-text">A wealthy American business magnate, playboy, philanthropist, inventor and ingenious
+            scientist, Anthony Edward Stark suffers a severe chest injury during a kidnapping. When his captors attempt
+            to force him to build a weapon of mass destruction, he instead creates a mechanized suit of armor to save
+            his life and escape captivity. Later, Stark develops his suit, adding weapons and other technological
+            devices he designed through his company, Stark Industries. He uses the suit and successive versions to
+            protect the world as Iron Man. Although at first concealing his true identity, Stark eventually publicly
+            reveals himself to be Iron Man.</p>
+        </div>
+        <div class="ssection-img">
+          <img src="img/ironman.jpg" alt="ironman">
+        </div>
+      </section>
+
+      <section class="videos">
+        <div class="vdiv">
+          <div class="video-title">
+            <p>Movies</p>
+          </div>
+        </div>
+        <div class="video-main">
+          <div class="row">
+            <div class="row_1">
+              <div class="youtube_video">
+                <iframe id="video_id" src="https://www.youtube.com/embed/KAE5ymVLmZg?rel=0" frameborder="0"
+                  style="width: 100%; height: 100%; border-radius: 8px; "
+                  allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                  allowfullscreen></iframe>
+              </div>
+              <div class="details" id="dtail">
+                <p class="p1" id="pp">Movies <br> Released</p>
+                <p class="p2">Click to watch trailer's</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery">
+            <div class="item active">
+              <img src="img/ironman-1.jpg" data-id="KAE5ymVLmZg?rel=0">
+              <div class="youtube_icon">
+                <img src="img/youtube.svg">
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/ironman-2.png" data-id="BoohRoVA9WQ?rel=0">
+              <div class="youtube_icon">
+                <img src="img/youtube.svg">
+              </div>
+            </div>
+            <div class="item">
+              <img src="img/ironman-3.jpg" data-id="Ke1Y3P9D0Bc?rel=0">
+              <div class="youtube_icon">
+                <img src="img/youtube.svg">
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
 
-    <div class="tpp">
-        <h1 class="dec">Iron Man is a superhero appearing in American comic books published by Marvel Comics. The
-            character was co-created by writer and editor Stan Lee, developed by scripter Larry Lieber, and designed by
-            artists Don Heck and Jack Kirby. The character made his first appearance in Tales of Suspense #39 (cover
-            dated March 1963), and received his own title in Iron Man #1 (May 1968). Also in 1963, the character founded
-            the Avengers alongside Thor, Ant-Man, Wasp and the Hulk.
-            A wealthy American business magnate, playboy, philanthropist, inventor and ingenious scientist, Anthony
-            Edward Stark suffers a severe chest injury during a kidnapping. When his captors attempt to force him to
-            build a weapon of mass destruction, he instead creates a mechanized suit of armor to save his life and
-            escape captivity. Later, Stark develops his suit, adding weapons and other technological devices he designed
-            through his company, Stark Industries. He uses the suit and successive versions to protect the world as Iron
-            Man. Although at first concealing his true identity, Stark eventually publicly reveals himself to be Iron
-            Man.
-            Initially, Iron Man was a vehicle for Stan Lee to explore Cold War themes, particularly the role of American
-            technology and industry in the fight against communism. Subsequent re-imaginings of Iron Man have
-            transitioned from Cold War motifs to contemporary matters of the time.[1]
-            Throughout most of the character's publication history, Iron Man has been a founding member of the superhero
-            team the Avengers and has been featured in several incarnations of his own various comic book series. Iron
-            Man has been adapted for several animated television shows and films. In the Marvel Cinematic Universe, Tony
-            Stark was portrayed by Robert Downey Jr. in the films Iron Man (2008), The Incredible Hulk (2008), Iron Man
-            2 (2010), The Avengers (2012), Iron Man 3 (2013), Avengers: Age of Ultron (2015), Captain America: Civil War
-            (2016), Spider-Man: Homecoming (2017), Avengers: Infinity War (2018), and Avengers: Endgame (2019), while
-            Mick Wingert voiced the character in the animated series What If...? (2021).
-            A wealthy American business magnate, playboy, philanthropist, inventor and ingenious scientist, Anthony
-            Edward Stark suffers a severe chest injury during a kidnapping. When his captors attempt to force him to
-            build a weapon of mass destruction, he instead creates a mechanized suit of armor to save his life and
-            escape captivity. Later, Stark develops his suit, adding weapons and other technological devices he designed
-            through his company, Stark Industries. He uses the suit and successive versions to protect the world as Iron
-            Man. Although at first concealing his true identity, Stark eventually publicly reveals himself to be Iron
-            Man.
-            Initially, Iron Man was a vehicle for Stan
-            A wealthy American business magnate, playboy, philanthropist, inventor and ingenious scientist, Anthony
-            Edward Stark suffers a severe chest injury during a kidnapping. When his captors attempt to force him to
-            build a weapon of mass destruction, he instead creates a mechanized suit of armor to save his life and
-            escape captivity. Later, Stark develops his suit, adding weapons and other technological devices he designed
-            through his company, Stark Industries. He uses the suit and successive versions to protect the world as Iron
-            Man. Although at first concealing his true identity, Stark eventually publicly reveals himself to be Iron
-            Man.
-            Initially, Iron Man was a vehicle for Stan
-        </h1>
-    </div>
+    <!-- <section class="spiderman-main">
+      <div class="first-data">
+        <a class="ibig-text" href="#">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          ironman
+        </a>
+        <p class="dsmall-text">A wealthy American business magnate, playboy, philanthropist, inventor and ingenious
+          scientist, Anthony Edward Stark suffers a severe chest injury during a kidnapping. When his captors attempt
+          to force him to build a weapon of mass destruction, he instead creates a mechanized suit of armor to save
+          his life and escape captivity. Later, Stark develops his suit, adding weapons and other technological
+          devices he designed through his company, Stark Industries. He uses the suit and successive versions to
+          protect the world as Iron Man. Although at first concealing his true identity, Stark eventually publicly
+          reveals himself to be Iron Man.</p>
+      </div>
+      <div class="ssection-img">
+        <img src="img/ironman.jpg" alt="ironman">
+      </div>
+    </section> -->
 
 
+  </div>
 
 
-    <script>
-        let bin = document.getElementById("hq");
-
-        window.addEventListener("scroll", function () {
-            let value = window.scrollY;
-
-            if (value>20) {
-                document.querySelector(".navbar").classList.remove("show");
-            }
-            else {
-                document.querySelector(".navbar").classList.add("show");
-            }
-
-        })
-
-        let vh = (window.innerHeight) * 0.01;
-        document.documentElement.style.setProperty('--vh', vh + 'px');
-    </script>
-
+  <script src="javascript.js"></script>
 </body>
 
 </html>
