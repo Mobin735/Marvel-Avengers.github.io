@@ -19,13 +19,13 @@ window.addEventListener("scroll", function () {
 })
 
 const menu_btn=document.getElementById("menubtn");
-
 menu_btn.addEventListener("click",function() {
-    document.querySelector(".nav-blur").classList.toggle("menuon");   
+    document.querySelector(".nav-blur").classList.toggle("menuon"); 
+    document.querySelector(".menu-btn i").classList.toggle("menuon");
 })
 
-const touch=document.querySelectorAll(".test, .data-section")
 
+const touch=document.querySelectorAll(".test, .data-section")
 touch.forEach(el => el.addEventListener('click',function(){
     document.querySelector(".nav-blur").classList.remove("menuon"); 
 }))

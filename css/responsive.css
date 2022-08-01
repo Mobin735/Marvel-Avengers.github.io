@@ -84,11 +84,11 @@
         transition: all 0.4s ease-out;
     }
 
-    #active{
+    #active {
         margin-right: 0;
     }
 
-    .liii li{
+    .liii li {
         padding: 0;
         margin: 0;
     }
@@ -98,14 +98,33 @@
     }
 
     .right-navbar {
-        display: none;
+        justify-content: center;
     }
 
-    .r-nav{
-        display: none;
+    .r-nav {
+        top: -40vh;
+        height: 190px;
+        padding-left: 65px;
+        position: fixed;
+        opacity: 0;
+        width: 100%;
+        transition: all 0.4s ease-in;
     }
 
+    #search {
+        font-size: 15px;
+        border: 3px solid #9a4949ad;
+        border-radius: 11px;
+        background-color: #403636;
+    }
 
+    .right-nav-btn{
+        color: #c36666bf;
+    }
+
+    .right-nav-btn:hover{
+        color: #aa9f9f;
+    }
 
     .burger {
         z-index: 999999;

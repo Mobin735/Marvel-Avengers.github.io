@@ -80,6 +80,7 @@
   font-size: 15px;
   border: 3px solid #da8282;
   border-radius: 11px;
+  background-color: red;
 }
 
 .right-nav-btn {
@@ -111,12 +112,25 @@
 }
 
 .menu-btn {
+  display: block;
   -webkit-tap-highlight-color: transparent;
   padding-right: 62px;
   font-size: 51px;
   color: #c36666bf;
   cursor: pointer;
 }
+
+.menuon .menu-btn i:before{
+  content: "\f00d";
+}
+
+/* 67px */
+
+/* .menuon .menu-btn{
+  display: none;
+} */
+
+
 
 /*----------------------------------------------- section part--------------------------------------------------------- */
 
