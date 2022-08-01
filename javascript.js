@@ -1,27 +1,40 @@
 let parallax = document.getElementById("main-bg");
 
+// console.log(document.querySelector(".burger").style);
+
 const hi = document.querySelector(".data-section");
 
 window.addEventListener("scroll", function () {
-    
+    document.querySelector(".nav-blur").classList.remove("menuon");
     let value = window.scrollY;
     if (window.scrollY > 20) {
         document.querySelector(".nav-blur").classList.add("top");
+        // document.querySelector(".burger").classList.add("burger-top");
     }
     else {
         document.querySelector(".nav-blur").classList.remove("top");
+        // document.querySelector(".burger").classList.remove("burger-top");
     }
     // parallax.style?.top = value * 0.042 + 'px';
 })
+
+const menu_btn=document.getElementById("menubtn");
+
+menu_btn.addEventListener("click",function() {
+    document.querySelector(".nav-blur").classList.toggle("menuon");   
+})
+
+const touch=document.querySelectorAll(".test, .data-section")
+
+touch.forEach(el => el.addEventListener('click',function(){
+    document.querySelector(".nav-blur").classList.remove("menuon"); 
+}))
+
 
 
 const navbaroption = {
     rootMargin: "100px 0px 0px 0px"
 };
-
-
-
-
 
 window.addEventListener('DOMContentLoaded',testcontent);
 
