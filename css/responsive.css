@@ -33,7 +33,7 @@
 
     .bg-box {
         flex-direction: column-reverse;
-        row-gap: 135px;
+        row-gap: 125px;
     }
 
     .first-half {
@@ -41,21 +41,22 @@
         width: 136%;
     }
 
-    .big-test {
-        font-size: 67px;
+    .big-text {
+        font-size: 79px;
     }
 
     .small-text {
-        font-size: 21px;
+        font-size: 29px;
     }
 
     .fhh-btn {
+        width: 47%;
         height: 100%;
-        font-size: 20px;
+        font-size: 25px;
     }
 
     .second-half img {
-        width: 168%;
+        width: 211%;
     }
 
     .second-half {
@@ -118,6 +119,10 @@
         background-color: #403636;
     }
 
+    #seacrh input[type=text]{
+        color: white;
+    }
+
     .right-nav-btn{
         font-size: 32px;
         color: #c36666bf;
@@ -135,7 +140,7 @@
     .nav-logo {
         padding-left: 33px;
         min-width: 0;
-        width: 16%;
+        width: 142px;
     }
 
     .nav-logo img {

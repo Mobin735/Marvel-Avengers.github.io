@@ -1,5 +1,12 @@
 let parallax = document.getElementById("main-bg");
 
+function clicked() {
+    window.open(
+        'https://www.youtube.com/watch?v=eOrNdBpGMv8',
+        '_blank' // <- This is what makes it open in a new window.
+    );
+}
+
 // console.log(document.querySelector(".burger").style);
 
 const hi = document.querySelector(".data-section");
@@ -18,16 +25,16 @@ window.addEventListener("scroll", function () {
     // parallax.style?.top = value * 0.042 + 'px';
 })
 
-const menu_btn=document.getElementById("menubtn");
-menu_btn.addEventListener("click",function() {
-    document.querySelector(".nav-blur").classList.toggle("menuon"); 
+const menu_btn = document.getElementById("menubtn");
+menu_btn.addEventListener("click", function () {
+    document.querySelector(".nav-blur").classList.toggle("menuon");
     document.querySelector(".menu-btn i").classList.toggle("menuon");
 })
 
 
-const touch=document.querySelectorAll(".test, .data-section")
-touch.forEach(el => el.addEventListener('click',function(){
-    document.querySelector(".nav-blur").classList.remove("menuon"); 
+const touch = document.querySelectorAll(".test, .data-section")
+touch.forEach(el => el.addEventListener('click', function () {
+    document.querySelector(".nav-blur").classList.remove("menuon");
 }))
 
 
@@ -36,16 +43,16 @@ const navbaroption = {
     rootMargin: "100px 0px 0px 0px"
 };
 
-window.addEventListener('DOMContentLoaded',testcontent);
+window.addEventListener('DOMContentLoaded', testcontent);
 
 function testcontent() {
     const testoptions = {
         rootMargin: '0px 0px 200px 0px'
     }
-    
-    const testobserver = new IntersectionObserver((entries,observer) => {
+
+    const testobserver = new IntersectionObserver((entries, observer) => {
         entries.forEach(entry => {
-            if(entry.isIntersecting){
+            if (entry.isIntersecting) {
                 entry.target.classList.add("showtest");
                 document.querySelector(".fh-btn").classList.add("fhh-btn-show");
                 document.querySelector(".second-half").classList.add("test-img-show");
@@ -92,9 +99,9 @@ g.forEach((v) => {
 
 
 
-const titleobserver = new IntersectionObserver((entries,observer) => {
+const titleobserver = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-        if(entry.isIntersecting){
+        if (entry.isIntersecting) {
             entry.target.classList.add("data-title-text-show");
             // observer.unobserve(entry.target);
         } else {
@@ -109,9 +116,9 @@ const text = document.querySelector(".data-title-text");
 titleobserver.observe(text);
 
 
-const hero_text_observer = new IntersectionObserver((entries,observer) => {
+const hero_text_observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-        if(entry.isIntersecting){
+        if (entry.isIntersecting) {
             entry.target.classList.add("dsmall-text-show");
             // observer.unobserve(entry.target);
         } else {
@@ -125,12 +132,10 @@ const hero_text_observer = new IntersectionObserver((entries,observer) => {
 const hero_text = document.querySelector(".dsmall-text");
 hero_text_observer.observe(hero_text);
 
-const video_text_observer = new IntersectionObserver((entries,observer) => {
-   
-    console.log("hi");
+const video_text_observer = new IntersectionObserver((entries, observer) => {
     entries.forEach(entry => {
-        if(entry.isIntersecting){
-            
+        if (entry.isIntersecting) {
+
             entry.target.classList.add("video-main-row-detail-p");
             // observer.unobserve(entry.target);
         } else {
