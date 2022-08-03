@@ -58,7 +58,7 @@
     width: 100%;
     user-select: none;
     position:fixed;
-    top: 0;
+/*     top: 0; */
     padding: 15px 0;
     background: none;
     z-index: 3;
