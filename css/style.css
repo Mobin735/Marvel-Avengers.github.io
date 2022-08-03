@@ -105,6 +105,7 @@
 }
 
 .burger {
+  margin-right: 12px;
   display: none;
   /* display: flex; */
   align-items: center;
