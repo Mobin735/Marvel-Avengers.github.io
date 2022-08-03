@@ -16,12 +16,10 @@ window.addEventListener("scroll", function () {
     let value = window.scrollY;
     if (window.scrollY > 0) {
         document.querySelector(".nav-blur").classList.add("top");
-        document.querySelector(".nav-blur").style.position="fixed";
         // document.querySelector(".burger").classList.add("burger-top");
     }
     else {
         document.querySelector(".nav-blur").classList.remove("top");
-        document.querySelector(".nav-blur").style.position="relative";
         // document.querySelector(".burger").classList.remove("burger-top");
     }
     // parallax.style?.top = value * 0.042 + 'px';
