@@ -14,7 +14,7 @@ const hi = document.querySelector(".data-section");
 window.addEventListener("scroll", function () {
     document.querySelector(".nav-blur").classList.remove("menuon");
     let value = window.scrollY;
-    if (window.scrollY > 0) {
+    if (window.scrollY > 20) {
         document.querySelector(".nav-blur").classList.add("top");
         // document.querySelector(".burger").classList.add("burger-top");
     }
