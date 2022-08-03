@@ -57,7 +57,7 @@
     height: 75px;
     width: 100%;
     user-select: none;
-    position: fixed;
+    /* position:fixed; */
     /* top: 0; */
     padding: 15px 0;
     background: none;
