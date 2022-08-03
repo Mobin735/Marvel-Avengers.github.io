@@ -53,7 +53,6 @@
 .nav-blur {
     -webkit-transform:translate3d(0,0,0);
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
     -webkit-tap-highlight-color: transparent;
     height: 75px;
     width: 100%;
@@ -69,7 +68,6 @@
 .nav-blur.top {
     -webkit-transform:translate3d(0,0,0);
     -webkit-backface-visibility: hidden;
-    backface-visibility: hidden;
     backdrop-filter: blur(10px);
 /*     filter: blur(10px); */
     background-color: rgb(0 0 0 / 9%);
