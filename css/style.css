@@ -34,6 +34,7 @@
 }
 
 .nav-logo img {
+  display: none;
   width: 24%;
   border: 0.15rem solid #D98324;
   border-radius: 50%;
