@@ -147,10 +147,16 @@
         padding-left: 58px;
         min-width: 0;
         width: 142px;
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
     }
 
     .nav-logo img {
         width: 72%;
+        height: 100%;
+        min-height: 100%;
+        max-height: 100%;
     }
 
 
