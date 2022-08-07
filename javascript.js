@@ -15,11 +15,11 @@ window.addEventListener("scroll", function () {
     document.querySelector(".nav-blur").classList.remove("menuon");
     let value = window.scrollY;
     if (window.scrollY > 20) {
-//         document.querySelector(".nav-blur").classList.add("top");
+        document.querySelector(".nav-blur").classList.add("top");
         // document.querySelector(".burger").classList.add("burger-top");
     }
-    else {
-//         document.querySelector(".nav-blur").classList.remove("top");
+    else if (window.scrollY < 20) {
+        document.querySelector(".nav-blur").classList.remove("top");
         // document.querySelector(".burger").classList.remove("burger-top");
     }
     // parallax.style?.top = value * 0.042 + 'px';
