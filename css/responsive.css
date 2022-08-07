@@ -7,7 +7,9 @@
     .nav-blur {
         border-bottom-left-radius: 7rem;
         border-bottom-right-radius: 7rem; 
-        height: 5%;
+        min-height: 135px;
+        max-height: 135px;
+/*         height: 5%; */
         padding: 20px 0;
     }
 
