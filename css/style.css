@@ -178,7 +178,7 @@
 
 .bg-box {
   z-index: 2;
-  display: flex;
+  display: none;
   align-self: center;
   justify-content: center;
   align-items: center;
