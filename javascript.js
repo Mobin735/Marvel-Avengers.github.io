@@ -18,7 +18,7 @@ $(window).scroll(function(){
     else{
         $('.nav-blur').removeClass("top");
     }
-});  
+});    
 
 // window.addEventListener("scroll", function () {
 //     document.querySelector(".nav-blur").classList.remove("menuon");
