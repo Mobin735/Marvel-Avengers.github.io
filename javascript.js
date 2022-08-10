@@ -7,32 +7,18 @@ function clicked() {
     );
 }
 
-// console.log(document.querySelector(".burger").style);
+const hi = document.querySelector(".data-section");    
 
-const hi = document.querySelector(".data-section");
-
-$(window).scroll(function(){
-    if(this.scrollY>20){
-        $('.nav-blur').addClass("top");
+window.addEventListener("scroll", function () {
+    document.querySelector(".nav-blur").classList.remove("menuon");
+    let value = window.scrollY;
+    if (window.scrollY > 20) {
+        document.querySelector(".nav-blur").classList.add("top");
     }
-    else{
-        $('.nav-blur').removeClass("top");
+    else if (window.scrollY < 20) {
+        document.querySelector(".nav-blur").classList.remove("top");
     }
-});    
-
-// window.addEventListener("scroll", function () {
-//     document.querySelector(".nav-blur").classList.remove("menuon");
-//     let value = window.scrollY;
-//     if (window.scrollY > 20) {
-//         document.querySelector(".nav-blur").classList.add("top");
-//         // document.querySelector(".burger").classList.add("burger-top");
-//     }
-//     else if (window.scrollY < 20) {
-//         document.querySelector(".nav-blur").classList.remove("top");
-//         // document.querySelector(".burger").classList.remove("burger-top");
-//     }
-//     // parallax.style?.top = value * 0.042 + 'px';
-// })
+})
 
 const menu_btn = document.getElementById("menubtn");
 menu_btn.addEventListener("click", function () {
